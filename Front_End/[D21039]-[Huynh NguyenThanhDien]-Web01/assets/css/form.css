@@ -1,0 +1,124 @@
+/* * */
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; 
+    border:none;
+    text-transform: capitalize;
+    transition: all 0.5s cubic-bezier(.38,1.15,.7,1.12);
+    font-weight: normal;
+    font-family: cursive;
+}
+body{
+    background-color: #F2F7FF;
+}
+
+img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo{
+    width: 6rem;
+}
+
+/* * */
+
+/* start form */
+.formbox{
+    width: 18rem;
+    height: 34.2rem;
+    position: relative;
+    background: white;
+    box-shadow: 0 0 1rem 0.5rem #0B409C;
+}
+
+.btnbox{
+    width: 14rem;
+    position: relative;
+    box-shadow: 0 0 1rem 0.5rem #0B409C;
+    border-radius: 2rem;
+}
+
+.btnclick{
+    color: #FDBE34;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+}
+
+#btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 100%;
+    background: linear-gradient(to right, #0D226B, #0B409C);
+    border-radius: 2rem;
+}
+
+.logoicon img{
+    width: 1.5rem;
+    box-shadow: 0 0 20px 0 #FDBE34;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.inputgroup{
+    top: 12rem;
+    position: absolute;
+    width: 10rem;
+    transition: 0.5s;
+}
+.inputfield{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid gray;
+}
+.btnsubmit{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: linear-gradient(to right, #0D226B, #0B409C);
+    border-radius: 2rem;
+    color: #FDBE34;
+}
+
+#frmlogin{
+    left: 4rem;
+}
+
+#frmregister{
+    left: 40rem;
+}
+
+.announce{
+    font-size: 0.6rem;
+    margin-bottom: -0.5rem;
+    padding: 0.5rem;
+}
+
+.result{
+    left: -25%;
+    width: 150%;
+    font-size: 0.9rem;
+}
+/* end form */
+
+/* start footer */
+.footer{
+    background-color: #0D226B;
+  }
+  
+.footer p{
+    color: white;
+}
+
+.footer span{
+    color: #FDBE34;
+}
+/* end footer */

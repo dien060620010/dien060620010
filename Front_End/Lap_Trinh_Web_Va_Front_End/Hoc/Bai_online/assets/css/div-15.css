@@ -1,0 +1,111 @@
+.clear-fix{
+    clear: both;
+}
+.picture{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 1200px;
+    height: 1250px;
+    background-color: aqua;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.content{
+    width: 1000px;
+    height: 1200px;
+    background-color: white;
+    position: relative;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+.content-head{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    width: 80%;
+}
+.content-head-describe{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    width: 800px;
+}
+.address{
+    width: 100%;
+    height: 400px;
+    /* background-color: red; */
+    position: absolute;
+    top: 150px;
+}
+.map{
+    width: 100%;
+    height: 100%;
+}
+.formsent{
+    width: 100%;
+    height: 600px;
+    /* background-color: red; */
+    position: relative;
+    position: absolute;
+    bottom: 0px;
+}
+.first-name{
+    position: absolute;
+    top: 50px;
+    left: 15%;
+}
+.f-name{
+    width: 350px;
+    height: 30px;
+}
+.email{
+    position: absolute;
+    top: 50px;
+    left: 55%;
+}
+.e-mail{
+    width: 350px;
+    height: 30px;
+}
+.text-area{
+    position: absolute;
+    top: 150px;
+    left: 15%;
+}
+.t-area{
+    width: 750px;
+    height: 200px;
+}
+.button{
+    position: absolute;
+    top: 400px;
+    left: 20%;
+    width: 60%;
+}
+.button-design{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: red;
+}
+.contact{
+    width: 60%;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 20%;
+    /* background-color: red; */
+}
+.contact-logo{
+    float: left;
+    width: 25%;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}

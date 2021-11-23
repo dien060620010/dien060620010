@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+.MenuCap2{
+	display: none;
+}
+
+
+.MenuCap1 {
+	list-style-type: none;
+	position: relative;
+	display: inline-table;
+}
+
+.MenuCap1 li {
+	float: left;
+}
+
+.MenuCap1 li a {
+	padding: 5px 10px;
+	text-decoration: none;
+	display: block;
+	font-weight: bold;
+	color: #666;
+	border-right: solid 1px #fff;
+}
+
+
+.MenuCap1 li a:hover {
+	background: #9F3;
+}
+
+.MenuCap1 li:hover ul {
+	display: block;
+	position: absolute;
+	list-style-type: none;
+	padding: 0px;
+}
+
+.MenuCap2 li{
+	position: relative;
+	float: none;
+	text-align: left;
+}
+
+
+.MenuCap2 li a {
+	background: #CCC;
+	border-top: solid 1px #fff;
+}
+
+.MenuCap2 li a:hover {
+	background: #6CF;
+}
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

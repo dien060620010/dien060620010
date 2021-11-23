@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The basic transform &amp; transition</title>
+<style>
+div {
+	position: absolute; left:100px; top:100px; width: 100px; height: 100px;
+	border: 1px solid #000;
+	text-align: center;
+	cursor: pointer;
+
+	transition: transform 2s, font 2s, background 2s, color 2s;
+	-o-transition: -o-transform 2s, font 2s, background 2s, color 2s;
+	-ms-transition: -ms-transform 2s, font 2s, background 2s, color 2s;
+	-moz-transition: -moz-transform 2s, font 2s, background 2s, color 2s;
+	-webkit-transition: -webkit-transform 2s, font 2s, background 2s, color 2s;
+}
+div:hover {
+	background: #ff0;
+	color: #f00;
+	font: bold 30px;
+	
+	transform: rotate(360deg) scale(2, 2);
+	-o-transform: rotate(360deg) scale(2, 2);
+	-ms-transform: rotate(360deg) scale(2, 2);
+	-moz-transform: rotate(360deg) scale(2, 2);
+	-webkit-transform: rotate(360deg) scale(2, 2);
+}
+</style>
+</head>
+<body>
+<div>CSS transition &amp; transform feature</div>
+</body>
+</html>

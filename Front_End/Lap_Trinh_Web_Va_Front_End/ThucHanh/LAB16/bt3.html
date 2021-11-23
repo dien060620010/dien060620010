@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bài tập 3</title>
+<script src="scripts/jquery.js"></script>
+
+<script src="http://www.google.com/jsapi"></script>
+<!-- load JQuery and UI from Google (need to use UI to animate colors) -->
+<script type="text/javascript">
+google.load("jqueryui", "1.5.2");
+</script>
+
+
+</head>
+
+<body>
+<div id="divContent" style="width: 50px; height: 50px; border-radius: 50%; background: #F93; position:absolute;"></div>
+<script>
+$(document).ready(function(e) {
+    $("#divContent").animate(
+		{
+			width: 400,
+			height: 400,
+			opacity: 0.2
+			
+		}, 1000
+	);
+	
+	$("#divContent").animate(
+		{
+			width: 300,
+			height: 300,
+			right: 0,
+			opacity: 1,
+			backgroundColor: "green",
+			borderRadius: 0
+			
+		}, 1000
+	);
+	
+	$("#divContent").animate(
+		{
+			width: 200,
+			height: 200,
+			opacity: 1,
+			backgroundColor: "yellow",
+			borderRadius: "50%",
+			top: "45%",
+			left: "45%",
+			boxShadow: "10px 10px 20px #000"
+		}, 1000
+	);
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+.clear-fix{
+    clear: both;
+}
+.picture{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    background-color: aqua;
+    width: 1200px;
+    height: 1700px;
+    margin: 0 auto;
+    position: relative;
+}
+.content{
+    background-color: white;
+    width: 1000px;
+    height: 700px;
+    position: relative;
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    text-align: center;
+}
+.head{
+    text-align: center;
+    font-size: 40px;
+    /* margin-top: 20px; */
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    width: 1000px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content-head{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 800px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.content-text{
+    position: absolute;
+    top: 110px;
+    left: 100px;
+    width: 800px;
+}
+.content-part{
+    width: 80%;
+    height: 60%;
+    /* background-color: red; */
+    position: absolute;
+    top: 200px;
+    left: 10%;
+}
+.part{
+    width: 28%;
+    height: 99%;
+    /* background-color: yellow; */
+    border: 1px solid black;
+    position: relative;
+    float: left;
+
+}
+.part-head{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    width: 80%;
+}
+.part-describe{
+    position: absolute;
+    top: 60px;
+    left: 10%;
+    width: 80%;
+}
+.part-button{
+    width: 80%;
+    position: absolute;
+    top: 120px;
+    left: 10%;
+}
+.part-button-design-1{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: aqua;
+}
+.part-button-design-2{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: red;
+}
+.part-content{
+    position: absolute;
+    top: 220px;
+    left: 10%;
+    width: 80%;
+}
+.space{
+    width: 7%;
+    height: 100%;
+    float: left;
+}
+.footer{
+    width: 1000px;
+    height: 700px;
+    background-color: white;
+    position: relative;
+    position: absolute;
+    top: 900px;
+    left: 100px;
+    text-align: center;
+}
+.footer-head{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    width: 800px;
+}
+.footer-text{
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    width: 800px;
+}
+.footer-part{
+    /* background-color: red; */
+    width: 800px;
+    height: 60%;
+    position: absolute;
+    top: 180px;
+    left: 10%;
+}
+.f-part-heading{
+    border: 1px solid black;
+    width: 24%;
+    height: 25%;
+    position: relative;
+    float: left;
+}
+.f-p-head{
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    width: 90%;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.f-p-text{
+    position: absolute;
+    top: 60px;
+    left: 5%;
+    width: 90%;
+}
+.f-part-content{
+    width: 24%;
+    height: 74%;
+    border: 1px solid black;
+    /* margin-top: 1%; */
+    position: relative;
+    float: left;
+}
+.chon{
+    background-color: aquamarine;
+}
+.f-p-content{
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    width: 90%;
+}
+.f-part-button{
+    position: absolute;
+    top: 220px;
+    left: 5%;
+    width: 90%;
+}
+.part-button-design-3{
+    width: 150px;
+    height: 50px;
+}

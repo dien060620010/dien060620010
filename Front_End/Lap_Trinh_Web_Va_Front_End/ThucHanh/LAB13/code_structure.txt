@@ -1,0 +1,63 @@
+<form>
+	<table width="921" height="548" border="1">
+  <tr>
+    <td colspan="2">Nhap thong tin gop y</td>
+  </tr>
+  <tr>
+    <td>chu de</td>
+    <td><select>
+    	<option>Gop y ve dich vu</option>
+    	<option>Dich vu 1</option>
+        <option>Dich vu 2</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Ho va ten</td>
+    <td><input type="text" name="txt" id="txt"/><font color="#FF0000">*</font></td>
+  </tr>
+  <tr>
+    <td>Dia chi </td>
+    <td><input type="text" name="txt" id="txt"/><font color="#FF0000">*</font></td>
+  </tr>
+  <tr>
+    <td>Dien thoai </td>
+    <td><input type="text" name="txt" id="txt"/><font color="#FF0000">*</font></td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td><input type="text" name="txt" id="txt"/><font color="#FF0000">*</font></td>
+  </tr>
+  <tr>
+    <td>Ban biet Salomon qua</td>
+    <td><input type="checkbox" name="baochi" id="1" value="1"/>Bao chi<br />
+        <input type="checkbox" name="internet" id="1" value="2"/>Internet<br />
+        <input type="checkbox" name="truyenmieng" id="1" value="3"/>Truyen mieng<br />
+        <input type="checkbox" name="khac" id="1" value="4"/>Khac<br />
+    </td>
+  </tr>
+  <tr>
+    <td>Ban co giao dich qua Salomon chua?</td>
+    <td>
+    	<input type="radio" name="giaodich" id="giaodich" value="1"/>Co
+        <input type="radio" name="giaodich" id="giaodich" value="1"/>Chua
+        <font color="#FF0000">*</font>
+    </td>
+  </tr>
+  <tr>
+    <td>Noi dung </td>
+    <td>Day la noi dung</td>
+  </tr>
+  <tr>
+    <td>Tap tin</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2"><font color="#FF0000">*</font> la bat buoc nhap</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="submit" name="capnhat" id="capnhat" value="Cap nhat"/><input type="reset" name="nhaplai" id="nhaplai" value="Nhap  lai"/></td>
+  </tr>
+</table>
+</form>

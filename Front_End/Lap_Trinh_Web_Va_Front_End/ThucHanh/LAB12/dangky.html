@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Đăng ký thành viên</title>
+</head>
+
+<body><form id="form1" name="form1" method="post" action="">
+<table width="100%" border="1" cellpadding="5" cellspacing="0" bordercolor="#CCCCCC" >
+  <tr>
+    <td colspan="2" bgcolor="#3399CC"><strong><font color="#FFFFFF">Nhập thông tin đăng ký</font></strong></td>
+  </tr>
+  <tr>
+    <td width="180" align="right"><label for="slChuDe">Tên truy cập:</label></td>
+    <td><input type="text" name="txtTenDangNhap" id="txtTenDangNhap" value="" />
+      <font color="#FF0000">*</font></td>
+  </tr>
+  <tr>
+    <td align="right"><label for="txtMatKhau1">Mật khẩu:</label></td>
+    <td><input type="password" name="txtMatKhau1" id="txtMatKhau1" value="" />
+      <font color="#FF0000">*</font></td>
+  </tr>
+  <tr>
+    <td align="right"><label for="txtMatKhau2">Nhập lại mật khẩu:</label></td>
+    <td><input type="password" name="txtMatKhau2" id="txtMatKhau2" value="" />
+      <font color="#FF0000">*</font></td>
+  </tr>
+  <tr>
+    <td align="right">Tỉnh thành:</td>
+    <td><select name="slChuDe" id="slChuDe">
+      <option value="0">Chọn tỉnh thành</option>
+      <option value="ct">Cần Thơ</option>
+      <option value="ag">An Giang</option>
+      <option value="vl">Vĩnh Long</option>
+    </select> <font color="#FF0000">*</font></td>
+  </tr>
+  <tr>
+    <td align="right">Họ và tên:</td>
+    <td><input type="text" name="txtHoTen" id="txtHoTen" value="" />
+    <font color="#FF0000">*</font></td>
+  </tr>
+  <tr>
+    <td align="right">Địa chỉ:</td>
+    <td><input name="txtDiaChi" type="text" id="txtDiaChi" value="" size="60" /></td>
+  </tr>
+  <tr>
+    <td align="right"><label for="txtDienThoai">Điện thoại</label></td>
+    <td><input type="text" name="txtDienThoai" id="txtDienThoai" value="" /></td>
+  </tr>
+  <tr>
+    <td align="right"><label for="txtEmail">Email:</label></td>
+    <td><input type="text" name="txtEmail" id="txtEmail" value="" />
+      <font color="#FF0000">*</font></td>
+  </tr>
+  <tr>
+    <td align="right">Mã số an toàn:</td>
+    <td><p>
+      <input type="text" name="txtMaAnToan" id="txtMaAnToan" value="" />
+       <img src="images/security_code.png" width="60" height="18" /> <font color="#FF0000">*</font><br />
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right">Đồng ý với các quy định
+    <label for="txtNoiDung">:</label></td>
+    <td>
+      <input type="checkbox" name="chkDongY" id="chkDongY" />
+      <label for="chkDongY"></label>
+          <font color="#FF0000">*</font></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left"><font color="#FF0000">*</font> là bắt buộc nhập</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input type="submit" name="btnCapNhat" id="btnCapNhat" value="Đăng ký" />
+      <input type="reset" name="btnNhapLai" id="btnNhapLai" value="Nhập lại" /></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,106 @@
+.clear-fix{
+    clear: both;
+}
+.container{
+    width: 1200px;
+    height: 1500px;
+    margin: 0 auto;
+    background-color: aqua;
+    position: relative;
+}
+.head{
+    width: 600px;
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 300px;
+}
+.content{
+    background-color: white;
+    width: 1000px;
+    height: 1350px;
+    position: relative;
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    text-align: center;
+}
+.content-head{
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    width: 600px;
+}
+.content-text{
+    width: 800px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.menu{
+    width: 40%;
+    position: absolute;
+    top: 170px;
+    left: 30%;
+}
+.menu-item{
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+}
+.menu-item-end{
+    float: right;
+    width: 22%;
+    /* margin-right: 4%; */
+}
+.item{
+    width: 90px;
+    height: 30px;
+}
+.picture{
+    width: 100%;
+    height: 100%;
+}
+.convert{
+    width: 800px;
+    height: 900px;
+    position: relative;
+    position: absolute;
+    top: 270px;
+    left: 100px;
+    /* background-color: red; */
+}
+.convert-img{
+    width: 30%;
+    height: 300px;
+    margin-right: 5%;
+    float: left;
+}
+.img-frame{
+    height: 220px;
+}
+.convert-img-end{
+    width: 30%;
+    height: 300px;
+    /* margin-right: 5%; */
+    float: left;
+}
+.describe-name{
+    margin-top: 15px;
+}
+.describe-text{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.footer-button{
+    position: absolute;
+    left: 300px;
+    bottom: 60px;
+    width: 400px;
+}
+.f-button{
+    width: 200px;
+    height: 60px;
+}

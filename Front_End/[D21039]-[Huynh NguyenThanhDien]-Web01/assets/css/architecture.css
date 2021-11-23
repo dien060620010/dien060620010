@@ -1,0 +1,149 @@
+/* * */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.3s cubic-bezier(0.38, 1.15, 0.7, 1.12);
+  font-weight: normal;
+  font-family: cursive;
+}
+body {
+  background-color: #f2f7ff;
+}
+
+img {
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #0d226b;
+  text-decoration: underline #0b409c;
+}
+
+p {
+  color: gray;
+}
+
+h3 {
+  color: red;
+}
+/* * */
+
+.btnLogin{
+  border-radius: 0.5rem;
+  background-color: #FDBE34;
+  color: #0B409C;
+}
+
+.logo{
+  width: 6rem;
+}
+
+.picture{
+  height: 100%;
+}
+
+.introduction{
+  width: 100%;
+  height: 30rem;
+}
+
+/* start architecture */
+.architecture .box {
+  height: 100%;
+  border-radius: 1.5rem;
+  height: 10rem;
+  position: relative;
+}
+
+.architecture .content{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.architecture .box:hover .content{
+  bottom: 0%;
+}
+/* end architecture   */
+
+/* start top architecture */
+.toparchitecture .card {
+  height: 30rem;
+}
+
+.toparchitecture img {
+  height: 80%;
+
+}
+
+.toparchitecture  .card:hover {
+  transform: translateY(-1rem);
+  transform: translateY(-1rem);
+  box-shadow: 0 0 1rem #333;
+  box-shadow: 0 0 1rem #333;
+}
+/* end top architecture */
+
+/* start footer */
+.footer {
+  background-color: #0d226b;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer span {
+  color: #fdbe34;
+}
+/* end footer */
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .architecture .box {
+      height: 25rem;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .architecture .box {
+      height: 25rem;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .architecture .box {
+      height: 18rem;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .architecture .box {
+      height: 25rem;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .architecture .box {
+      height: 25rem;
+  }
+}

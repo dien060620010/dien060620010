@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Styling Techniques</title>
+<style>
+	input:required {
+		outline: 1px red solid;
+		color: green ;
+	}
+	input:required:valid {
+		background-size:10px 10px;
+		background-position: right top;
+		background-repeat: no-repeat;
+	}
+	input:required:invalid {
+		background-size:10px 10px;
+		background-position: right top;
+		background-repeat: no-repeat;
+	}
+</style>
+</head>
+<body>
+	<form method="get" action="">
+		Name: <input type="text" name="name" required="true" placeholder="Input name" /><br/>
+		Email: <input type="email" name="emailid" required="true" placeholder="Email Address" multiple="multiple" autocomplete="on" /><br />
+		<input type="submit" value="submit" />
+	</form>
+</body>
+</html>

@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background:#CCC;
+	text-align:center;	
+	}
+
+.LV1 {
+	list-style-type:none;	
+}
+
+.LV1 a {
+	font:Verdana, Geneva, sans-serif 15px ;
+	color:#0FC;
+	text-decoration:none;
+	
+	}
+.LV1 a:hover {
+	color:#999;	
+	}
+.lvl1{
+	font:Verdana, Geneva, sans-serif 12px ;
+	color:#09F;
+	}
+.lv2{
+	text-align:center;
+	font:Verdana, Geneva, sans-serif 10px;
+	color:#393;
+	}
+
+.LV2 {
+	list-style-type:none;	
+}
+.LV2 a {
+	font:Verdana, Geneva, sans-serif 15px ;
+	color:#966;
+	text-decoration:none;
+	}
+#Dinhdangbang{
+	border-style:groove;
+	border:solid double;
+	border-collapse:collapse;
+	
+		}
+#Footer{
+	background-color:#00F;
+	text-align:left;
+	vertical-align:inherit;
+	}
+
+
+body {
+	
+	font-weight:bold;
+	 }
+
+#Skinbanner{
+			background: url(../images/ICON/banner.png) no-repeat;
+			height:auto
+			} 
+
+
+@charset "utf-8";
+/* CSS Document */
+
+
+.Meunucap1 a:hover{
+			color:#09C;
+			}
+			
+.Meunucap1 {
+			margin: 5px;			
+			list-style-type:none;
+			position:relative;	
+			display:inline-table;
+			
+			}
+			
+.Meunucap1 li {
+			float:left;
+			padding:10px;
+			
+			}
+
+.Meunucap1 li a{
+				text-decoration:none;
+				color:#3CF;
+				display:block;
+				
+				}
+.Meunucap1 li:hover ul {
+						display:block;
+						position:absolute;
+						padding:0px;
+								}	
+.Menucap2 {
+			display:none;
+			text-decoration:none;
+			list-style-type:none;
+			
+		}
+.Menucap2 li{
+			float:none;
+			margin: 2px;
+			text-align:left;
+			background:#999;
+			padding:0px;
+			
+	}
+.Menucap2 li a{
+			border-top: 2px #666 solid;	
+			Margin: 2px 2px 5px 0px;
+	}
+
+			

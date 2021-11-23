@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form name="frmDangKy" id="frmDangKy" method="post" action="#" enctype="multipart/form-data">
+    <table width="921" height="548" border="1">
+      <tr>
+        <td colspan="2">Nhap thong tin gop y</td>
+      </tr>
+      <tr>
+        <td>chu de</td>
+        <td>
+          <select id="slChuDe" name="slChuDe">
+            <option value="">Gop y ve dich vu</option>
+            <option value="dv1">Dich vu 1</option>
+            <option value="dv2">Dich vu 2</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Ho va ten</td>
+        <td><input type="text" name="txtHoTen" id="txtHoTen" />
+          <font color="#FF0000">*</font>
+        </td>
+      </tr>
+      <tr>
+        <td>Dia chi </td>
+        <td><input type="text" name="txtDiaChi" id="txtDiaChi" />
+          <font color="#FF0000">*</font>
+        </td>
+      </tr>
+      <tr>
+        <td>Dien thoai </td>
+        <td><input type="text" name="txtDienThoai" id="txtDienThoai" />
+          <font color="#FF0000">*</font>
+        </td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="text" name="txtEmail" id="txtEmail" />
+          <font color="#FF0000">*</font>
+        </td>
+      </tr>
+      <tr>
+        <td>Ban biet Salomon qua</td>
+        <td>
+          <input type="checkbox" name="chkBietQua" id="chkBietQua_1" value="bc" />Bao chi<br />
+          <input type="checkbox" name="chkBietQua" id="chkBietQua_2" value="in" />Internet<br />
+          <input type="checkbox" name="chkBietQua" id="chkBietQua_3" value="tm" />Truyen mieng<br />
+          <input type="checkbox" name="chkBietQua" id="chkBietQua_4" value="kh" />Khac<br />
+          <input type="checkbox" name="chkBietQua" id="chkBietQua_5" value="kh1" />Khac 1<br />
+          <input type="checkbox" name="chkBietQua" id="chkBietQua_6" value="kh2" />Khac 2<br />
+        </td>
+      </tr>
+      <tr>
+        <td>Ban co giao dich qua Salomon chua?</td>
+        <td>
+          <input type="radio" name="rdGiaoDich" id="rdGiaoDich_1" value="1" />Co
+          <input type="radio" name="rdGiaoDich" id="rdGiaoDich_2" value="0" />Chua
+          <font color="#FF0000">*</font>
+        </td>
+      </tr>
+      <tr>
+        <td>Noi dung </td>
+        <td>
+          <textarea name="txtNoiDung" id="txtNoiDung"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>Tap tin</td>
+        <td>
+          <input type="file" name="fTapTin" id="fTapTin" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <font color="#FF0000">*</font> la bat buoc nhap
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="button" name="btnCapNhat" id="btnCapNhat" value="Cap nhat" onclick="kiemtra();" />
+          <input type="reset" name="nhaplai" id="nhaplai" value="Nhap  lai" />
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <script>
+  function kiemtra() {
+    
+    // 1. Lấy dữ liệu
+    var chude = document.getElementById('slChuDe').value;
+    var hoten = document.getElementById('txtHoTen').value;
+    var diachi = document.getElementById('txtDiaChi').value;
+    var dienthoai = document.getElementById('txtDienThoai').value;
+    var email = document.getElementById('txtEmail').value;
+    var noidung = document.getElementById('txtNoiDung').value;
+    var file = document.getElementById('fTapTin').value;
+
+    // 1.1. Lấy dữ liệu của checkbox
+    // Chuẩn dữ liệu sẽ gởi đến server..
+    // bc,tm
+    // bc,in,kh
+    // in
+    
+    debugger;
+    // bc,tm,
+    var ketquaBietQua = '';
+    
+    // a. Lấy các phần tử có cùng name=??
+    var danhsachElementBietQua = document.getElementsByName('chkBietQua'); // 4 inputs
+    //          0   --    < 6
+    for(var i = 0; i < danhsachElementBietQua.length; i++) {
+
+      var phantucankiemtra = danhsachElementBietQua[i]; // lấy phần tử thứ i
+
+      if(phantucankiemtra.checked) { // Nếu phần tử đang xét được người dùng chọn
+        // Thì lấy giá trị (value) của phần tử đó lưu lại
+        ketquaBietQua += phantucankiemtra.value + ',';
+      }
+
+    }
+
+    
+    // 2. Kiểm tra ràng buộc dữ liệu (validation)
+    var loi = '';
+
+    if(ketquaBietQua == '') {
+      loi += 'Vui lòng chọn một trong ...';
+    }
+
+    // 2.1. Kiểm tra chủ đề (validate)
+    // Rule: - Bắt buộc nhập
+    if(chude == '') {
+      loi += 'Vui lòng chọn chủ đề';
+    }
+
+    // 2.2. Kiểm tra họ tên (validate)
+    // Rule: - Bắt buộc nhập
+    //       - Nhập từ 3 ký tự trở lên
+    //       - Nhập tối đa 50 ký tự
+    //       - Không được nhập tên "admin", "hacker"
+    // trim()
+    if(hoten == '') {
+      loi += 'Vui lòng nhập họ tên';
+    } else if(hoten.length < 3) {
+      loi += 'Vui lòng nhập họ tên từ 3 ký tự trở lên';
+    } else if(hoten.length > 50) {
+      loi += 'Vui lòng nhập họ tên tối đa 50 ký tự.';
+    } else if(hoten == 'admin' || hoten == 'hacker') {
+      loi += 'Vui lòng nhập tên khác...';
+    }
+
+    // 2.3. Kiểm tra địa chỉ (validate)
+    // ...
+
+    // 3. Thông báo lỗi nếu có
+    // Ngược lại thông báo thành công...
+    if(loi != '') {
+      alert(loi);
+    } else {
+      // Thành công
+      alert('bạn đã đăng ký thành c')
+    }
+
+  }
+  
+  </script>
+</body>
+
+</html>

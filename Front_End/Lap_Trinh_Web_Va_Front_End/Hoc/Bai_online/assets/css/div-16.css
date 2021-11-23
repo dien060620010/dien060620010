@@ -1,0 +1,143 @@
+.clear-fix{
+    clear: both;
+}
+.picture{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 1200px;
+    height: 900px;
+    background-color: aqua;
+    margin: 0 auto;
+    position: relative;
+}
+.head{
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content{
+    background-color: white;
+    position: relative;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    width: 1000px;
+    height: 750px;
+}
+.content-head{
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    width: 800px;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form-information{
+    width: 40%;
+    height: 70%;
+    /* float: left; */
+    position: relative;
+    position: absolute;
+    top: 150px;
+    left: 10%;
+    /* background-color: red; */
+}
+.first-name{
+    position: absolute;
+    top: 10px;
+}
+.f-name{
+    width: 390px;
+    height: 50px;
+}
+.email{
+    position: absolute;
+    top: 90px;
+}
+.e-mail{
+    width: 390px;
+    height: 50px;
+}
+.text-area{
+    position: absolute;
+    top: 180px;
+}
+.note{
+    width: 390px;
+    height: 200px;
+}
+.button{
+    position: absolute;
+    top: 420px;
+}
+.button-design{
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 150px;
+}
+.space{
+    width: 5%;
+    height: 100%;
+    /* background-color: red; */
+    /* float: left; */
+    position: absolute;
+    left: 50%;
+}
+.content-text{
+    position: relative;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    /* background-color: red; */
+    width: 35%;
+    height: 70%;
+}
+.text-text{
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+}
+.text-describe{
+    position: absolute;
+    top: 100px;
+    font-size: 20px;
+    font-style: oblique;
+}
+.text-contact{
+    position: absolute;
+    top: 160px;
+}
+.text-tel{
+    position: absolute;
+    top: 240px;
+    font-size: 20px;
+}
+.position-logo{
+    width: 80%;
+    height: 100px;
+    /* background-color: red; */
+    position: relative;
+    position: absolute;
+    top: 330px;
+}
+.logo{
+    width: 30%;
+    height: 50%;
+    border: 1px solid black;
+    /* position: absolute;
+    top: 25%; */
+    float: left;
+}
+.logo-space{
+    width: 2%;
+    height: 50%;
+    float: left;
+}

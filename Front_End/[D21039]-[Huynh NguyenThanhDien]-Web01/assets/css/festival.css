@@ -1,0 +1,230 @@
+/* * */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.3s cubic-bezier(0.38, 1.15, 0.7, 1.12);
+  font-weight: normal;
+  font-family: cursive;
+}
+body {
+  background-color: #f2f7ff;
+}
+
+img {
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #0d226b;
+  text-decoration: underline #0b409c;
+}
+
+p {
+  color: gray;
+}
+
+h3 {
+  color: red;
+}
+/* * */
+
+.btnLogin {
+  border-radius: 0.5rem;
+  background-color: #fdbe34;
+  color: #0b409c;
+}
+
+.logo {
+  width: 6rem;
+}
+
+.picture {
+  height: 100%;
+}
+
+.introduction {
+  width: 100%;
+  height: 30rem;
+}
+
+/* start TopFestival */
+.TopFestival .box {
+  height: 20rem;
+  border-radius: 0.5rem;
+  background: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: relative;
+}
+
+.TopFestival .box img {
+  height: 100%;
+}
+
+.TopFestival .content {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  width: 100%;
+  background: white;
+}
+
+.TopFestival .box:hover .content {
+  bottom: 0;
+}
+
+.TopFestival .box:hover {
+  transform: scale(1.03);
+}
+/* end TopFestival */
+
+/* start festival */
+.festival .box {
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.9);
+  height: 25rem;
+  cursor: pointer;
+}
+
+.festival .box img {
+  height: 100%;
+}
+
+.festival .box .content {
+  flex-flow: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.3);
+  opacity: 0;
+}
+
+.festival .box:hover .content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.festival .box:hover img {
+  transform: scale(1.3);
+}
+
+.festival p {
+  color: black;
+}
+/* end festival */
+
+/* start footer */
+.footer {
+  background-color: #0d226b;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer span {
+  color: #fdbe34;
+}
+/* end footer */
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+.picture{
+    height: 15rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    .picture{
+        height: 15rem;
+    }
+
+
+    .TopFestival .box{
+        height: 20rem;
+    }
+
+    .festival .box{
+        height: 20rem;
+    }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .picture{
+        height: 20rem;
+    }
+
+    .TopFestival .box{
+        height: 20rem;
+    }
+
+    .festival .box{
+        height: 30rem;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+    .picture{
+        height: 25rem;
+    }
+
+    .TopFestival .box{
+        height: 20rem;
+    }
+
+    .festival .box{
+        height: 29rem;
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .picture{
+        height: 35rem;
+    }
+
+    .TopFestival .box{
+        height: 20rem;
+    }
+
+    .festival .box{
+        height: 30rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+    .picture{
+        height: 40rem;
+    }
+
+    .TopFestival .box{
+        height: 25rem;
+    }
+
+    .festival .box{
+        height: 35rem;
+    }
+}
