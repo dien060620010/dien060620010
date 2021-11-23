@@ -1,1 +1,0 @@
-alert("Đây là script gọi từ tập tin script.js");
